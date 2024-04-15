@@ -137,22 +137,22 @@ const Instagram = () => {
           <h3 className={styles.footerHeading}>Navigation</h3>
           <ul className={styles.footerList}>
             <li className={styles.footerItem}>
-              <Link href="/home">Home</a>
+              <Link href="/home">Home</Link>
             </li>
             <li className={styles.footerItem}>
-              <Link href="/instagram">Instagram</a>
+              <Link href="/instagram">Instagram</Link>
             </li>
             <li className={styles.footerItem}>
-              <Link href="/tiktok">TikTok</a>
+              <Link href="/tiktok">TikTok</Link>
             </li>
             <li className={styles.footerItem}>
-              <Link href="/youtube">YouTube</a>
+              <Link href="/youtube">YouTube</Link>
             </li>
             <li className={styles.footerItem}>
-              <Link href="/fanart">Fan Art</a>
+              <Link href="/fanart">Fan Art</Link>
             </li>
             <li className={styles.footerItem}>
-              <Link href="/business">Business</a>
+              <Link href="/business">Business</Link>
             </li>
           </ul>
         </div>
