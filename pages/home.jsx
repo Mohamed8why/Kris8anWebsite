@@ -89,22 +89,22 @@ const Home = () => {
           <h3 className={styles.footerHeading}>Navigation</h3>
           <ul className={styles.footerList}>
             <li className={styles.footerItem}>
-              <a href="/home">Home</a>
+              <Link href="/home">Home</a>
             </li>
             <li className={styles.footerItem}>
-              <a href="/instagram">Instagram</a>
+              <Link href="/instagram">Instagram</a>
             </li>
             <li className={styles.footerItem}>
-              <a href="/tiktok">TikTok</a>
+              <Link href="/tiktok">TikTok</a>
             </li>
             <li className={styles.footerItem}>
-              <a href="/youtube">YouTube</a>
+              <Link href="/youtube">YouTube</a>
             </li>
             <li className={styles.footerItem}>
-              <a href="/fanart">Fan Art</a>
+              <Link href="/fanart">Fan Art</a>
             </li>
             <li className={styles.footerItem}>
-              <a href="/business">Business</a>
+              <Link href="/business">Business</a>
             </li>
           </ul>
         </div>
