@@ -99,9 +99,9 @@ const Instagram = () => {
     </div>
     <div className={styles.profileBox}>
           <div className={styles.imageContainer}>
-            <Image src="/ontop.jpeg" width={230} height={230} />
+            <Image src="/ontop.jpeg" alt="someone on top of a high mountain raising both arms" width={230} height={230} />
           </div>
-          <h1 className='goody'>Good vibes only :)</h1>
+          <h1 className='goody'>Good vibes only &#9786</h1>
         </div>
 
     <div className={styles.buttonContainer}>

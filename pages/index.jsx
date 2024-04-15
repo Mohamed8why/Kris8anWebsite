@@ -7,7 +7,7 @@ const HomePage = () => {
     useEffect(() => {
         // Redirect to '/first' when the root path is accessed
         router.push('/first');
-    }, []); // Empty dependency array ensures this effect runs only once on component mount
+    }, [router]); // Include router in the dependency array
 
     return null; // This component doesn't render anything visible
 };

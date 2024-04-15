@@ -57,7 +57,7 @@ const Home = () => {
                     height={400}
                     className={styles.largeProfilePhoto}
                 />
-                <h1 className={styles.bigText}>Don't be afraid to be yourself</h1>
+                <h1 className={styles.bigText}>Don&#39;t be afraid to be yourself</h1>
                 <a href='https://www.famousbirthdays.com/people/kris8an.html'><button className={styles.button}>Boost Me On Famous Birthdays</button></a>
                 <h2 className={styles.aboutMe}>Who Am I?</h2>
                 <p className={styles.po}>My name is Kris Grippo. I am a 21 year old content creator, who posts on Instagram, TikTok and Youtube.
