@@ -53,8 +53,8 @@ const Home = () => {
                 <Image
                     src="/phuto.jpg" // Replace with your large profile photo
                     alt="Large Profile Photo"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className={styles.largeProfilePhoto}
                 />
                 <h1 className={styles.bigText}>Don&#39;t be afraid to be yourself</h1>
