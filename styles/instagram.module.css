@@ -1,0 +1,265 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    background: black; /* Set background color to black */
+    padding: 20px; /* Add padding to the header */
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+}
+
+.profileName {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.navItem a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+    color: gray;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('/instaback1.jpg'); /* Replace 'your-image-url.jpg' with your actual image URL */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+}
+@media (max-width: 768px) {
+    .profileContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .profile {
+        margin-bottom: 20px; /* Add margin-bottom to create space between profile and navigation on mobile */
+    }
+
+    .navItem {
+        font-size: 20px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .po {
+        margin-left: 10px; /* Adjust margin for smaller devices */
+        margin-right: 10px; /* Adjust margin for smaller devices */
+        line-height: 2;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Adjust as needed */
+    color: white;
+}
+
+.footerColumn {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between columns */
+}
+
+.footerHeading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footerList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerItem {
+    margin-bottom: 5px;
+}
+
+.footerItem a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+}
+
+.footerItem a:hover {
+    color: gray;
+}
+/* instagram.module.css */
+
+.containe {
+    display: flex; /* Display posts horizontally */
+    flex-wrap: wrap; /* Allow posts to wrap to the next line if needed */
+  }
+  
+  .post {
+    flex: 1; /* Each post takes up equal space */
+    margin: 10px; /* Add some margin around each post */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .containe {
+      flex-direction: column; /* Display posts vertically on smaller screens */
+    }
+  }
+  /* instagram.module.css */
+
+.containo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  
+  .instagramButton {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .instagramButton:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* New CSS for ping animation */
+  .instagramButton::after {
+    content: '';
+    position: absolute;
+    top: -2px; /* Adjust positioning as needed */
+    right: -2px; /* Adjust positioning as needed */
+    width: calc(100% + 4px); /* Adjust width to cover the entire button */
+    height: calc(100% + 4px); /* Adjust height to cover the entire button */
+    background-color: white;
+    border-radius: 20px;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; /* Apply ping animation */
+  }
+  
+  /* Keyframes for the ping animation */
+  @keyframes ping {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+  
+  
+  .buttonText {
+    font-size: 18px;
+  }
+  
+  .profileBox {
+    top: 0;
+    right: 0;
+    width: 600px; /* Adjust width as needed */
+    height: 900px; /* Adjust height as needed */
+    max-width: 100%;
+    /* Remove padding-top and padding-bottom */
+    /* padding-top: 50px;
+    padding-bottom: 70px; */
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    box-shadow: 
+      10px 5px rgba(46, 17, 150, 0.5),
+      20px 10px rgba(247, 37, 201, 0.4),
+      30px 15px rgba(197, 13, 105, 0.3),
+      40px 20px rgba(9, 247, 215, 0.2);
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .profileBox {
+        top: 0;
+        right: 0;
+        width: 300px; /* Adjust width as needed */
+        height: 400px; /* Adjust height as needed */
+        max-width: 100%;
+        /* Remove padding-top and padding-bottom */
+        /* padding-top: 50px;
+        padding-bottom: 70px; */
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        box-shadow: 
+          10px 5px rgba(46, 17, 150, 0.5),
+          20px 10px rgba(247, 37, 201, 0.4),
+          30px 15px rgba(197, 13, 105, 0.3),
+          40px 20px rgba(9, 247, 215, 0.2);
+        overflow: hidden;
+    }
+  }
+  .contaio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttonContainer {
+    margin-bottom: 20px; /* Adjust as needed */
+  }

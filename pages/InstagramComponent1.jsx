@@ -1,0 +1,14 @@
+// InstagramComponent.jsx
+
+import React from 'react';
+
+const InstagramComponent1 = () => {
+  return (
+    <div>
+      {/* Embed Instagram post */}
+      <blockquote class="instagram-media" data-instgrm-version="13" data-instgrm-permalink="https://www.instagram.com/p/C3f7jJmrHC_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></blockquote>
+    </div>
+  );
+};
+
+export default InstagramComponent1;

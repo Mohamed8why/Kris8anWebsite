@@ -1,0 +1,300 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    background: black;
+    padding: 20px;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+}
+
+.profileName {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.navItem a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+    color: gray;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('/youtubeholo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .profileContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .navItem {
+        font-size: 20px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footerColumn {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footerHeading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footerList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerItem {
+    margin-bottom: 5px;
+}
+
+.footerItem a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footerItem a:hover {
+    color: gray;
+}
+
+.containe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    flex: 1;
+    margin: 10px;
+    max-width: 900px;
+    max-height: 700px;
+}
+
+@media (max-width: 768px) {
+    .containe {
+      flex-direction: column;
+    }
+    .post {
+        flex: 1;
+        margin: 10px;
+        max-width: 450px;
+        max-height: 300px;
+    }
+}
+
+.contaio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonContainer {
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.instagramButton {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.instagramButton:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instagramButton::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-color: white;
+    border-radius: 20px;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+}
+
+.buttonText {
+    font-size: 18px;
+}
+.imageContainer {
+    margin-right: 45px;
+    margin-left: 30px;
+  }
+
+.profileBox {
+    top: 0;
+    right: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  flex-direction: row;
+  font-size: 30px;
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 15px 10px rgba(240, 144, 0, 1); /* Adjust shadow properties */
+  margin: 20px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding: 20px; /* Adjust max width as needed */
+  background-color: #fff; /* Set background color */
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .profileBox {
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 15px 10px rgba(240, 144, 0, 1); /* Adjust shadow properties */
+        margin: 20px;
+        color: black;
+        margin-top: 50px;
+        width: 370px;
+        height: 370px;
+        font-size: 30px;
+        margin-bottom: 50px;
+        padding: 20px;/* Adjust max width as needed */
+        background-color: #fff; /* Set background color */
+        overflow: hidden;
+    }
+}
+.goody {
+    color: black;
+}
+.conma {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column; /* Change direction to column */
+    border-radius: 20px;
+    border: 3px solid black; /* Specify solid for border */
+    margin-top: 90px;
+    margin-bottom: 90px;
+    box-shadow: 15px 20px rgba(240, 144, 0);
+    width: 400px;
+    height: 270px;
+}
+@media (max-width: 768px) {
+    .conma {
+        box-align: center;
+        display: flex;
+        padding: auto;
+        flex-direction: column;
+        align-items: center; /* Align items vertically */
+        justify-content: center;
+        border-radius: 20px;
+        border: 3px solid black;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        box-shadow: 15px 20px rgba(240, 144, 0);
+        width: 270px;
+        height: 400px;
+    }
+}
+.ontop-container {
+    max-width: 270px; /* Adjust to match the width of the image */
+    max-height: 380px; /* Adjust to match the height of the image */
+    text-align: center; /* Center the content horizontally */
+    margin: 30px;
+    padding: 30px;
+}

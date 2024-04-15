@@ -1,0 +1,135 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.header {
+    background: black; /* Set background color to black */
+    padding: 20px; /* Add padding to the header */
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+}
+
+.profileName {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.navItem a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+    color: gray;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+@media (max-width: 768px) {
+    .profileContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .profile {
+        margin-bottom: 20px; /* Add margin-bottom to create space between profile and navigation on mobile */
+    }
+
+    .navItem {
+        font-size: 20px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .po {
+        margin-left: 10px; /* Adjust margin for smaller devices */
+        margin-right: 10px; /* Adjust margin for smaller devices */
+        line-height: 2;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Adjust as needed */
+    color: white;
+}
+
+.footerColumn {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between columns */
+}
+
+.footerHeading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footerList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerItem {
+    margin-bottom: 5px;
+}
+
+.footerItem a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+}
+
+.footerItem a:hover {
+    color: gray;
+}
+.note {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
