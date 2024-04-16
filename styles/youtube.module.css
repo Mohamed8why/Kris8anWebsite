@@ -1,12 +1,10 @@
-.bodyContainer body {
-    margin: 0;
-    padding: 0;
-}
+
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
